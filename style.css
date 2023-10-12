@@ -63,7 +63,7 @@ html {
     width: 100%;
     max-width: 375px;
     height: auto;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -259,7 +259,7 @@ html {
     width: 100%;
     max-width: 375px;
     height: auto;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
@@ -343,7 +343,7 @@ html {
     }
 
     #main-section {
-        align-items: start;
+        position: relative;
         padding-top: 20%;
         padding-bottom: 20%;
         width: 50%;
@@ -358,6 +358,7 @@ html {
     }
 
     #succes-card {
+        display: none;
         flex-direction: row;
         width: 50%;
         max-width: none;
