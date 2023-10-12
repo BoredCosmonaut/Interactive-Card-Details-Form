@@ -1,0 +1,376 @@
+/* This bit is for css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Below is where the style begins */
+
+body {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+html {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#card {
+    margin: 2% auto;
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#back {
+    position: relative;
+    left: 40px;
+    width: 300px;
+    height: 200px;
+    font-weight: 500;
+    background-image: url("images/bg-card-back.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#cvc-card {
+    position: relative;
+    top: 90px;
+    left: 235px;
+}
+
+#front {
+    position: relative;
+    top: -105px;
+    left: -20px;
+    width: 300px;
+    height: 200px;
+    font-weight: 500;
+    background-image: url("images/bg-card-front.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+#logo {
+    padding-top: 30px;
+    padding-left: 20px;
+    width: 70px;
+}
+
+#front-text {
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+
+#number-card {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#name-date-card{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 16px;
+}
+
+#date-card {
+    margin-left: 100px;
+}
+
+
+
+#main-section {
+    position: relative;
+    z-index: 2; 
+    top: -170px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: white;
+}
+
+#cardholder-part{
+    padding-top: 50px;
+    margin-left: 40px;
+}
+
+#cardholder-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#name-input {
+    padding: 7px 100px 7px 10px;
+    border-radius: 5px;
+    border-width: thin;
+    border-color: rgba(253, 225, 189, 0.668);
+}
+
+#cardnumber-part {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+#cardnumber {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#number-input {
+    padding: 7px 100px 7px 10px;
+    border-radius: 5px;
+    border-width: thin;
+    border-color: rgba(253, 225, 189, 0.668);
+}
+
+#exp-date-part {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+#exp-date {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#cvc-inputs {
+    max-width: 375px;
+    display: flex;
+    flex-direction: row;
+}
+
+#month-input {
+    width: 10%;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border-width: thin;
+    border-color: rgba(253, 225, 189, 0.668);
+    margin-left: 5px;
+}
+
+#date-input-header {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+#year-input {
+    margin-left: 35px;
+    width: 10%;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border-width: thin;
+    border-color: rgba(253, 225, 189, 0.668);
+}
+
+#cvc {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+#cvc-input {
+    margin-left: 45px;
+    width: 20%;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border-width: thin;
+    border-color: rgba(253, 225, 189, 0.668);
+}
+
+#submit {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px 120px 15px 120px;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#succes-card {
+    margin: 2% auto;
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#below-cards {
+    position: relative;
+    top: -199px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+#succes-image {
+    margin-top: 100px;
+}
+
+#thank {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#complete-text {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#continue {
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+    padding: 15px 120px 15px 120px;
+    background-color: hsl(278, 68%, 11%);
+}
+
+#continue:hover {
+    cursor: pointer;
+}
+ @media(min-width: 400px) {
+    
+    body {
+        background-image: url("images/bg-main-desktop.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+        overflow: hidden;
+    }
+
+    #card {
+        height: 100%;
+        width: 100%;
+        min-height: 100%;
+        max-width: none;
+        flex-direction: row;
+    }
+
+    #card-preview-section {
+        position: relative;
+        left: 20%;
+        width: 50%;
+        height: 100%;
+        min-height: 100%;
+    }
+
+    #front {
+        top: -380px;
+    }
+
+    #back {
+        left: 100px;
+    }
+
+    #main-section {
+        align-items: start;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        width: 50%;
+        height: 100%;
+        min-height: 100%;
+        margin-left: 30px;
+    }
+
+    #submit {
+        position: relative;
+        right: 170px;
+    }
+
+    #succes-card {
+        flex-direction: row;
+        width: 50%;
+        max-width: none;
+    }
+
+    #below-cards {
+        width: 100%;
+        position: relative;
+        left: 500px;
+        top: -300px;
+    }
+
+    .cards {
+        top: 300px;
+    }
+ }
